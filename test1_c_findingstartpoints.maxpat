@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 318.0, 8.0, 33.0, 22.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-164",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 772.500000000000227, 564.0, 193.499999999999773, 33.0 ],
-					"presentation_linecount" : 6,
+					"patching_rect" : [ 772.500000000000227, 564.0, 195.0, 33.0 ],
 					"text" : "changes dashes at slow interval to avoid extra triggering"
 				}
 
@@ -131,7 +142,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 960.0, 50.0, 22.0 ],
-					"text" : "155769"
+					"text" : "61883"
 				}
 
 			}
@@ -155,7 +166,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 524.5, 510.0, 143.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "change range of samples"
 				}
 
@@ -205,7 +215,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 627.0, 195.0, 49.0, 33.0 ],
+					"patching_rect" : [ 627.0, 195.0, 53.0, 33.0 ],
 					"text" : "SPEED range"
 				}
 
@@ -254,7 +264,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 284.0, 344.0, 126.0, 22.0 ],
-					"text" : "0., 0.84 5. 0. 234."
+					"text" : "0., 0.97 5. 0. 170."
 				}
 
 			}
@@ -330,7 +340,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 579.0, 213.5, 45.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "80 240"
 				}
 
@@ -486,7 +495,7 @@
 					"pointcolor" : [ 0.992156862745098, 1.0, 0.0, 1.0 ],
 					"range" : 300000,
 					"size" : 14,
-					"table_data" : [ 0, 162805, 187917, 150623, 155769, 168332, 150623, 162805, 187917, 139073, 162805, 271220, 150623, 155769, 161481 ],
+					"table_data" : [ 0, 63996, 85813, 72607, 61883, 84771, 63996, 87163, 2413, 79454, 161481, 61883, 87163, 85813, 61883 ],
 					"textcolor" : [ 0.964705882352941, 1.0, 0.117647058823529, 1.0 ]
 				}
 
@@ -540,7 +549,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 707.5, 855.633270000000039, 50.0, 22.0 ],
-					"text" : "168332"
+					"text" : "61883"
 				}
 
 			}
@@ -1022,7 +1031,7 @@
 						"loopend" : [ 0.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "basic",
-						"originallength" : [ 0.0, "ticks" ],
+						"originallength" : [ 307332.696708402247168, "ticks" ],
 						"originaltempo" : 119.999999999999972,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
@@ -1299,6 +1308,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
